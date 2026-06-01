@@ -1,14 +1,16 @@
 [
   {
     "label": "CPPBUILD",
-    "command": "g++ -std=c++20 -O2 -Wall $ZED_FILE -o ~/Documents/CPP/.build/run && gtimeout 2s ~/Documents/CPP/.build/run<~/Documents/CPP/.build/test.in>~/Documents/CPP/.build/test.out",
+    "command": "g++ -std=c++20 $ZED_FILE -o ~/Documents/CPP/.build/run && gtimeout 2s ~/Documents/CPP/.build/run<~/Documents/CPP/.build/test.in>~/Documents/CPP/.build/test.out",
     "reveal": "no_focus",
     "save": "all",
   },
   {
     "label": "CPPRUN",
-    "command": "~/.config/zed/run.sh",
-    // "allow_concurrent_runs": true,
+    "command": "open -na /Applications/Ghostty.app --args -e fish -lc \"~/.config/zed/run.sh; exec fish\"",
+    "allow_concurrent_runs": true,
+    "reveal": "no_focus",
+    "hide": "always",
     "use_new_terminal": false,
     "save": "all",
   },
