@@ -1,7 +1,7 @@
 [
   {
     "label": "CPPBUILD",
-    "command": "g++ -std=c++20 $ZED_FILE -o ~/Documents/CPP/.build/run && gtimeout 2s ~/Documents/CPP/.build/run<~/Documents/CPP/.build/test.in>~/Documents/CPP/.build/test.out",
+    "command": "g++ -std=c++20 $ZED_FILE -o ~/Documents/CP/CPP/.build/run && gtimeout 2s ~/Documents/CPP/.build/run<~/Documents/CPP/.build/test.in>~/Documents/CPP/.build/test.out",
     "reveal": "no_focus",
     "save": "all",
   },
